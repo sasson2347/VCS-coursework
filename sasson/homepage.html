@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Style Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">S</div>
+          <span>Nexus</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#">Store</a>
+          <a href="#">Library</a>
+          <a href="#">Community</a>
+          <a href="#">Support</a>
+        </nav>
+        <div class="topbar-actions">
+          <input id="searchBox" type="text" placeholder="Search games" />
+          <button id="themeToggle">🌙</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <aside class="sidebar">
+          <h3>Browse</h3>
+          <ul>
+            <li>Featured</li>
+            <li>New Releases</li>
+            <li>Top Sellers</li>
+            <li>Special Offers</li>
+            <li>Wishlist</li>
+          </ul>
+        </aside>
+
+        <section class="main-panel">
+          <section class="hero-card">
+            <div class="hero-copy">
+              <p class="eyebrow">Featured Game</p>
+              <h1>Neon Horizon</h1>
+              <p>
+                Explore a futuristic city, master high-speed chases, and unlock a neon-powered story.
+              </p>
+              <div class="hero-actions">
+                <button class="primary">Buy Now</button>
+                <button class="secondary">Add to Wishlist</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-header">
+              <h2>Special Offers</h2>
+              <a href="#">See more</a>
+            </div>
+            <div class="card-grid">
+              <article class="game-card" data-name="Shadow Rift">
+                <div class="card-thumb shadow"></div>
+                <div class="card-info">
+                  <h3>Shadow Rift</h3>
+                  <p>Co-op adventure • 70% off</p>
+                  <span class="price">$14.99</span>
+                </div>
+              </article>
+              <article class="game-card" data-name="Pixel Arena">
+                <div class="card-thumb pixel"></div>
+                <div class="card-info">
+                  <h3>Pixel Arena</h3>
+                  <p>Arcade action • New</p>
+                  <span class="price">$9.99</span>
+                </div>
+              </article>
+              <article class="game-card" data-name="Ocean Drift">
+                <div class="card-thumb ocean"></div>
+                <div class="card-info">
+                  <h3>Ocean Drift</h3>
+                  <p>Exploration • 40% off</p>
+                  <span class="price">$12.49</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-header">
+              <h2>Top Sellers</h2>
+              <a href="#">See more</a>
+            </div>
+            <div class="card-grid">
+              <article class="game-card" data-name="Nova Tactics">
+                <div class="card-thumb nova"></div>
+                <div class="card-info">
+                  <h3>Nova Tactics</h3>
+                  <p>Strategy • Most played</p>
+                  <span class="price">$19.99</span>
+                </div>
+              </article>
+              <article class="game-card" data-name="Echo Legends">
+                <div class="card-thumb echo"></div>
+                <div class="card-info">
+                  <h3>Echo Legends</h3>
+                  <p>RPG • Top rated</p>
+                  <span class="price">$24.99</span>
+                </div>
+              </article>
+              <article class="game-card" data-name="Flux Runner">
+                <div class="card-thumb flux"></div>
+                <div class="card-info">
+                  <h3>Flux Runner</h3>
+                  <p>Speed • Trending</p>
+                  <span class="price">$11.99</span>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
