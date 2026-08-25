@@ -1,6 +1,7 @@
 :root {
   color-scheme: dark;
-  --bg: #0a0320;
+  --bg: #071a33;
+  --grid-line: rgba(102, 180, 220, 0.1);
   --panel: #140b33;
   --panel-2: #23154d;
   --text: #fff7d6;
@@ -13,6 +14,7 @@
 body.light {
   color-scheme: light;
   --bg: #f5ebdc;
+  --grid-line: rgba(63, 43, 29, 0.08);
   --panel: #f7e5cc;
   --panel-2: #f9e7c7;
   --text: #3f2b1d;
@@ -29,8 +31,11 @@ body.light {
 body {
   margin: 0;
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  background:
-    linear-gradient(180deg, rgba(0, 229, 255, 0.24) 0%, rgba(255, 77, 141, 0.10) 35%, var(--bg) 100%);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--text);
   min-height: 100vh;
 }
